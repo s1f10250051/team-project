@@ -1,5 +1,12 @@
+html, body{
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
 body {
     background-color: darkgrey;
+
 }
 .sidebar {
     width: 30%;
@@ -15,4 +22,19 @@ body {
     display: flex;
     flex-direction: row;
     background-color: whitesmoke;
+}
+h1{
+    text-align: center;
+    padding: 50px;
+    border-bottom: solid black;
+}
+h2{
+    margin-top: 100px;
+}
+p{
+    
+}
+img{
+    height: 300px;
+    width: 100%;
 }

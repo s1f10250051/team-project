@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-
+  
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
@@ -9,21 +9,11 @@
 
 <body>
     <div id="container">
-        <div class="sidebar">
-            <h1>ゲーム</h1>
-            <ul>
-                <li><a href="home.html">ホーム</a></li>
-                <li>ゲームジャンル
-                    <ul>
-                        <li><a href="fpstps.html">FPS・TPS</a></li>
-                        <li><a href="fighting.html">格闘</a></li>
-                        <li><a href="simulation.html">シミュレーション</a></li>
-                        <li><a href="music-game.html">音楽ゲーム</a></li> </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="content">
-            <h1>ゲームジャンルを選択してください</h1>
+    <div class="sidebar">
+      <div id="sidebar"></div>
+    </div>
+    <div class="content">
+      <h1>ホーム</h1>
 
             <div class="game-genre-cards">
                 <a href="fpstps.html" class="genre-card">
@@ -53,6 +43,14 @@
                 </div>
         </div>
     </div>
+  </div>
+
+  <script>
+  fetch("sidebar.html")
+    .then((response) => response.text())
+    .then((data) => document.querySelector("#sidebar").innerHTML = data);
+  </script>
+  
 </body>
 
 </html>

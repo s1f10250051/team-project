@@ -8,6 +8,11 @@
 </head>
 
 <body>
+  <div id="container">
+  <div class="sidebar">
+    <div id="sidebar"></div>
+  </div>
+  <div class="content">
   <h1>音楽ゲーム</h1>
 
   <p>ここでは、「音楽ゲームってどんなゲーム？」という基本的な情報から、プラットフォームごとの特徴、おすすめのゲーム紹介、知っておくと便利な専門用語まで、音楽ゲームに関する情報を紹介します。</p>
@@ -116,6 +121,13 @@
   <p>音楽ゲームの世界は日々進化しており、新しいゲームや楽曲が次々と生まれています。これからの音楽ゲームにも、期待が高まります。</p>
 
   <br>
+</div>
+</div>
+  <script>
+    fetch("sidebar.html")
+      .then((response) => response.text())
+      .then((data) => document.querySelector("#sidebar").innerHTML = data);
+  </script>
 </body>
 
 </html>

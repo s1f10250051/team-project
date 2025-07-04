@@ -9,7 +9,9 @@
 
 <body>
   <div id="container">
-  <div class="sidebar"></div>
+  <div class="sidebar">
+    <div id="sidebar"></div>
+  </div>
   <div class="content">
     <h1>シュミレーションゲーム</h1>
     <h2>ゲーム性・遊び方</h2>
@@ -90,6 +92,11 @@
     </table>
   </div>
   </div>
+    <script>
+      fetch("sidebar.html")
+        .then((response) => response.text())
+        .then((data) => document.querySelector("#sidebar").innerHTML = data);
+    </script>
 </body>
 
 </html>
