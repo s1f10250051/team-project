@@ -8,12 +8,19 @@
 
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <title>格闘ゲーム - 概要と歴史</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
+    <div id="container">
+    <div class="sidebar">
+        <div id="sidebar"></div>
+    </div>
+    <div class="content">
     <h1>格闘ゲーム</h1>
 
     <h2>概要</h2>
@@ -50,5 +57,12 @@
     <p>テクノロジーの進歩とともに、格闘ゲームも3Dグラフィックへと進化します。1993年登場の『バーチャファイター』や『鉄拳』シリーズはポリゴンによる立体的なキャラクターと動きを実現し、従来の2Dとは異なる操作性と戦略性をもたらしました。グラフィックやモーションのリアルさも大きな魅力となり、新たなファン層を獲得しました。</p>
     <h3>4. 現代（eスポーツ時代）</h3>
     <p>インターネットの普及により、オンライン対戦が当たり前に。プレイヤーは世界中の対戦相手と腕を競うことができるようになり、格闘ゲームはプロeスポーツ種目としても注目されるようになりました。EVO（Evolution Championship Series）などの世界大会やトッププロゲーマーの登場により、ますます多くの人が競技シーンに加わっています。また、新作と並行して、過去の人気作のリメイクや移植も活発です。</p>
+</div>
+</div>
+  <script>
+  fetch("sidebar.html")
+    .then((response) => response.text())
+    .then((data) => document.querySelector("#sidebar").innerHTML = data);
+  </script>
 </body>
 </html>
