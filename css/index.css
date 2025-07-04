@@ -9,13 +9,18 @@ body {
 
 }
 .sidebar {
-    width: 30%;
-    margin: 10px 0 10px 0;
+    width: 15%;
+    
 }
+
 
 .content {
     width: 70%;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 10px 0; 
+    border-left: solid gray 10px;
+}
+.content2{
+    padding:0px 100px;
 }
 
 #container {
@@ -23,18 +28,4 @@ body {
     flex-direction: row;
     background-color: whitesmoke;
 }
-h1{
-    text-align: center;
-    padding: 50px;
-    border-bottom: solid black;
-}
-h2{
-    margin-top: 100px;
-}
-p{
-    
-}
-img{
-    height: 300px;
-    width: 100%;
-}
+
